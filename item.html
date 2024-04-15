@@ -53,6 +53,7 @@
 	</head>
 	<body>
 		<script>const assets=['initFancybox'];</script>
+		<input type="hidden" id="pageType" value="item-card" />
 		<div class="__wo-modal --size-s" id="auth-modal">
 			<div class="__overflow" data-dismiss onclick="closeWOModal()"></div>
 			<div class="__window">
@@ -301,185 +302,307 @@
 			<div class="__wo-holder-5"></div>
 			<div class="__item-page">
 				<div class="__wo-row">
-					<div id="item-gallery" class="__wo-col-m-7 __gallery">
-						<div class="__item">
-							<a href="/public/catalog/item-13-1.jpeg" data-fancybox="Галлерея">
-								<div class="__wo-pict-bg" data-square style="background-image:url('/public/catalog/item-13-1.jpeg');">
-									<img src="/public/catalog/item-13-1.jpeg">
-								</div>
-							</a>
-						</div>
-						<div class="__item">
-							<a href="/public/catalog/item-13-2.jpeg" data-fancybox="Галлерея">
-								<div class="__wo-pict-bg" data-square style="background-image:url('/public/catalog/item-13-2.jpeg');">
-									<img src="/public/catalog/item-13-2.jpeg">
-								</div>
-							</a>
-						</div>
-						<div class="__item">
-							<a href="/public/catalog/item-13-3.jpeg" data-fancybox="Галлерея">
-								<div class="__wo-pict-bg" data-square style="background-image:url('/public/catalog/item-13-3.jpeg');">
-									<img src="/public/catalog/item-13-3.jpeg">
-								</div>
-							</a>
-						</div>
-						<div class="__item">
-							<a href="/public/catalog/item-13-1.jpeg" data-fancybox="Галлерея">
-								<div class="__wo-pict-bg" data-square style="background-image:url('/public/catalog/item-13-1.jpeg');">
-									<img src="/public/catalog/item-13-1.jpeg">
-								</div>
-							</a>
+					<div class="__wo-col-m-7 __gallery">
+						<div id="item-gallery">
+							<div class="__item">
+								<a href="/public/catalog/item-13-1.jpeg" data-fancybox="Галлерея">
+									<div class="__wo-pict-bg" data-square style="background-image:url('/public/catalog/item-13-1.jpeg');">
+										<img src="/public/catalog/item-13-1.jpeg">
+									</div>
+								</a>
+							</div>
+							<div class="__item">
+								<a href="/public/catalog/item-13-2.jpeg" data-fancybox="Галлерея">
+									<div class="__wo-pict-bg" data-square style="background-image:url('/public/catalog/item-13-2.jpeg');">
+										<img src="/public/catalog/item-13-2.jpeg">
+									</div>
+								</a>
+							</div>
+							<div class="__item">
+								<a href="/public/catalog/item-13-3.jpeg" data-fancybox="Галлерея">
+									<div class="__wo-pict-bg" data-square style="background-image:url('/public/catalog/item-13-3.jpeg');">
+										<img src="/public/catalog/item-13-3.jpeg">
+									</div>
+								</a>
+							</div>
+							<div class="__item">
+								<a href="/public/catalog/item-13-1.jpeg" data-fancybox="Галлерея">
+									<div class="__wo-pict-bg" data-square style="background-image:url('/public/catalog/item-13-1.jpeg');">
+										<img src="/public/catalog/item-13-1.jpeg">
+									</div>
+								</a>
+							</div>
 						</div>
 					</div>
 					<div class="__wo-col-m-5 __card">
-						<div class="__information">
-							<div class="__rating">
-								<ul>
-									<li><i class="__wo-icon-star"></i></li>
-									<li><i class="__wo-icon-star"></i></li>
-									<li><i class="__wo-icon-star"></i></li>
-									<li><i class="__wo-icon-star"></i></li>
-									<li><i class="__wo-icon-star --empty"></i></li>
+						<div id="item-card">
+							<div class="__information">
+								<div class="__rating">
+									<ul>
+										<li><i class="__wo-icon-star"></i></li>
+										<li><i class="__wo-icon-star"></i></li>
+										<li><i class="__wo-icon-star"></i></li>
+										<li><i class="__wo-icon-star"></i></li>
+										<li><i class="__wo-icon-star --empty"></i></li>
+									</ul>
+									<a href="javascript:;">32 отзыва</a>
+								</div>
+								<a href="javascript:;"><i class="__wo-icon-rr-plus --mr"></i>Оставить отзыв</a>
+								<a href="javascript:;"><i class="__wo-icon-rr-heart --mr"></i>Добавить в избранное</a>
+							</div>
+							<div class="__header">
+								<h1>Стенд Уголок потребителя 3 с перекидной системой красный</h1>
+								<div class="__labels">
+									<span class="__wo-label --size-l --success">-7%</span>
+									<span class="__wo-label --size-l">В наличии</span>
+								</div>
+							</div>
+							<div class="__wo-holder-10"></div>
+							<div class="__wo-holder-10"></div>
+	
+							<div class="__buy-area">
+								<div class="__price">
+									<span>2 763 ₽</span>
+									<s>2 970 ₽</s>
+									<div class="__amount __wo-btn-group">
+										<button class=""><i class="__wo-icon-rr-minus-small"></i></button>
+										<input type="number" value="1" min="1" max="9999" />
+										<button class=""><i class="__wo-icon-rr-plus-small"></i></button>
+									</div>
+								</div>
+								<div class="__wo-holder-10"></div>
+								<button class="__wo-btn --addtocart --inverted"><span><i class="__wo-icon-rr-shopping-bag-add"></i></span><span>Добавить в корзину</span></button>
+								<div class="__wo-holder-10"></div>
+								<strong>Модификации</strong>
+								<div class="__wo-holder-5"></div>
+								<ul class="__wo-ul --plain">
+									<li><label><input class="--wo-danger" type="checkbox" />Алюминиевая рамка с подвесом<span>+ 790 ₽</span></label></li>
+									<li><label><input class="--wo-danger" type="checkbox" />Подарочная упаковка<span>+ 350 ₽</span></label></li>
 								</ul>
-								<a href="javascript:;">32 отзыва</a>
 							</div>
-							<a href="javascript:;"><i class="__wo-icon-rr-plus --mr"></i>Оставить отзыв</a>
-							<a href="javascript:;"><i class="__wo-icon-rr-heart --mr"></i>Добавить в избранное</a>
-						</div>
-						<div class="__header">
-							<h1>Стенд Уголок потребителя 3 с перекидной системой красный</h1>
-							<div class="__labels">
-								<span class="__wo-label --size-l --success">-7%</span>
-								<span class="__wo-label --size-l">В наличии</span>
+							<div class="__wo-holder-10"></div>
+							<div class="__wo-holder-10"></div>
+	
+							<div class="__wo-panel __brand-panel">
+								<div>
+									<a href="javascript:;"><div class="__pict __wo-pict-bg --border-circle" style="background-image:url('/public/brands/stendovo-logo.jpg');"></div></a>
+									<a href="javascript:;">Стендово<span>Премиум-бренд</span></a>
+								</div>
+	
+								<button class="__wo-btn --size-s --outline">Посмотреть товары</button>
 							</div>
-						</div>
-						<div class="__wo-holder-10"></div>
-						<div class="__wo-holder-10"></div>
-
-						<div class="__buy-area">
-							<div class="__price">
-								<span>2 763 ₽</span>
-								<s>2 970 ₽</s>
-								<div class="__amount __wo-btn-group">
-									<button class=""><i class="__wo-icon-rr-minus-small"></i></button>
-									<input type="number" value="1" min="1" max="9999" />
-									<button class=""><i class="__wo-icon-rr-plus-small"></i></button>
+							<div class="__wo-holder-10"></div>
+							<div class="__wo-holder-10"></div>
+	
+							<div class="__delivery-info">
+								<strong>Доставка<i class="__wo-icon-question-outline"></i><a href="javascript:;">Москва</a></strong>
+								<div class="__wo-holder-5"></div>
+								<div class="__grid">
+									<div class="__item">
+										<ul class="__wo-ul --plain">
+											<li><i class="__wo-icon-pickup"></i><span>Самовывоз</span><strong>0 ₽</strong></li>
+											<li><span>ул. Госпитальный вал д. 5 к. 15</span></li>
+										</ul>
+									</div>
+									<div class="__item">
+										<ul class="__wo-ul --plain">
+											<li><i class="__wo-icon-truck"></i><span>Курьером</span><strong>от 400 ₽</strong></li>
+											<li><i class="__wo-icon-box"></i><span>До ПВЗ</span><strong>от 400 ₽</strong></li>
+										</ul>
+									</div>
 								</div>
 							</div>
 							<div class="__wo-holder-10"></div>
-							<button class="__wo-btn --addtocart --inverted"><span><i class="__wo-icon-rr-shopping-bag-add"></i></span><span>Добавить в корзину</span></button>
+	
+							<div class="__params">
+								<table>
+									<tbody>
+										<tr>
+											<td>Ширина, мм</td>
+											<td>240</td>
+										</tr>
+										<tr>
+											<td>Высота, мм</td>
+											<td>750</td>
+										</tr>
+										<tr>
+											<td>Толщина, мм</td>
+											<td>30</td>
+										</tr>
+										<tr>
+											<td>Вес, гр</td>
+											<td>1780</td>
+										</tr>
+										<tr>
+											<td>Материал</td>
+											<td>дерево хвойных пород высшей обработки</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="--wo-flex-center">
+									<button class="__wo-btn --size-s --outline"><span>Перейти к описанию</span></button>
+								</div>
+							</div>
 							<div class="__wo-holder-10"></div>
-							<strong>Модификации</strong>
-							<div class="__wo-holder-5"></div>
-							<ul class="__wo-ul --plain">
-								<li><label><input class="--wo-danger" type="checkbox" />Алюминиевая рамка с подвесом<span>+ 790 ₽</span></label></li>
-								<li><label><input class="--wo-danger" type="checkbox" />Подарочная упаковка<span>+ 350 ₽</span></label></li>
-							</ul>
-						</div>
-						<div class="__wo-holder-10"></div>
-						<div class="__wo-holder-10"></div>
-
-						<div class="__wo-panel __brand-panel">
-							<div>
-								<a href="javascript:;"><div class="__wo-pict-bg --border-circle" style="background-image:url('/public/brands/stendovo-logo.jpg');"></div></a>
-								<a href="javascript:;">Стендово<span>Премиум-бренд</span></a>
-							</div>
-
-							<button class="__wo-btn --size-s --outline">Посмотреть товары</button>
-						</div>
-						<div class="__wo-holder-10"></div>
-						<div class="__wo-holder-10"></div>
-
-						<div class="__delivery-info">
-							<strong>Доставка<i class="__wo-icon-question-outline"></i><a href="javascript:;">Москва</a></strong>
-							<div class="__wo-holder-5"></div>
-							<div class="__grid">
-								<div class="__item">
-									<ul class="__wo-ul --plain">
-										<li><i class="__wo-icon-pickup"></i><span>Самовывоз</span><strong>0 ₽</strong></li>
-										<li><span>ул. Госпитальный вал д. 5 к. 15</span></li>
-									</ul>
-								</div>
-								<div class="__item">
-									<ul class="__wo-ul --plain">
-										<li><i class="__wo-icon-truck"></i><span>Курьером</span><strong>от 400 ₽</strong></li>
-										<li><i class="__wo-icon-box"></i><span>До ПВЗ</span><strong>от 400 ₽</strong></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="__wo-holder-10"></div>
-
-						<div class="__params">
-							<table>
-								<tbody>
-									<tr>
-										<td>Ширина, мм</td>
-										<td>240</td>
-									</tr>
-									<tr>
-										<td>Высота, мм</td>
-										<td>750</td>
-									</tr>
-									<tr>
-										<td>Толщина, мм</td>
-										<td>30</td>
-									</tr>
-									<tr>
-										<td>Вес, гр</td>
-										<td>1780</td>
-									</tr>
-									<tr>
-										<td>Материал</td>
-										<td>дерево хвойных пород высшей обработки</td>
-									</tr>
-								</tbody>
-							</table>
-							<div class="--wo-flex-center">
-								<button class="__wo-btn --size-s --outline"><span>Перейти к описанию</span></button>
-							</div>
-						</div>
-						<div class="__wo-holder-10"></div>
-
-						<div class="__others">
-							<strong>Другие варианты</strong>
-							<div class="__wo-holder-10"></div>
-							<div class="__grid">
-								<div class="__item-mini-card --inactive">
-									<div class="__pict __wo-pict-bg" data-square style="background-image:url('/public/catalog/item-13-1.jpeg');"></div>
-									<div class="__info">
-										<a href="javascript:;">Стенд Уголок потребителя 3 с перекидной системой красный</a>
-										<div class="__price"><span>2 763 ₽</span><s>2 970 ₽</s><span class="__wo-label --size-xs --success">-7%</span></div>
+	
+							<div class="__others">
+								<strong>Другие варианты</strong>
+								<div class="__wo-holder-10"></div>
+								<div class="__grid">
+									<div class="__item-mini-card --inactive">
+										<div class="__pict __wo-pict-bg" data-square style="background-image:url('/public/catalog/item-13-1.jpeg');"></div>
+										<div class="__info">
+											<a href="javascript:;">Стенд Уголок потребителя 3 с перекидной системой красный</a>
+											<div class="__price"><span>2 763 ₽</span><s>2 970 ₽</s><span class="__wo-label --size-xs --success">-7%</span></div>
+										</div>
 									</div>
-								</div>
-								<div class="__item-mini-card">
-									<div class="__pict __wo-pict-bg" data-square style="background-image:url('/public/catalog/item-14-1.jpeg');"></div>
-									<div class="__info">
-										<a href="javascript:;">Стенд Уголок потребителя 3 с перекидной системой синий</a>
-										<div class="__price"><span>2 970 ₽</span></div>
+									<div class="__item-mini-card">
+										<div class="__pict __wo-pict-bg" data-square style="background-image:url('/public/catalog/item-14-1.jpeg');"></div>
+										<div class="__info">
+											<a href="javascript:;">Стенд Уголок потребителя 3 с перекидной системой синий</a>
+											<div class="__price"><span>2 970 ₽</span></div>
+										</div>
 									</div>
-								</div>
-								<div class="__item-mini-card">
-									<div class="__pict __wo-pict-bg" data-square style="background-image:url('/public/catalog/item-15-1.jpeg');"></div>
-									<div class="__info">
-										<a href="javascript:;">Стенд Уголок потребителя 3 с перекидной системой зеленый</a>
-										<div class="__price"><span>2 970 ₽</span></div>
+									<div class="__item-mini-card">
+										<div class="__pict __wo-pict-bg" data-square style="background-image:url('/public/catalog/item-15-1.jpeg');"></div>
+										<div class="__info">
+											<a href="javascript:;">Стенд Уголок потребителя 3 с перекидной системой зеленый</a>
+											<div class="__price"><span>2 970 ₽</span></div>
+										</div>
 									</div>
-								</div>
-								<div class="__item-mini-card">
-									<div class="__pict __wo-pict-bg" data-square style="background-image:url('/public/catalog/item-16-1.jpeg');"></div>
-									<div class="__info">
-										<a href="javascript:;">Стенд Уголок потребителя 3 с перекидной системой черный</a>
-										<div class="__price"><span>2 970 ₽</span></div>
+									<div class="__item-mini-card">
+										<div class="__pict __wo-pict-bg" data-square style="background-image:url('/public/catalog/item-16-1.jpeg');"></div>
+										<div class="__info">
+											<a href="javascript:;">Стенд Уголок потребителя 3 с перекидной системой черный</a>
+											<div class="__price"><span>2 970 ₽</span></div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="__wo-holder-10"></div>
+				<div class="__wo-row __card-descr">
+					<div class="__wo-col-m-6">
+						<strong>Описание</strong>
+						<div class="__wo-holder-10"></div>
+						<p>Стенд Уголок потребителя 3 плоских А4 + перекидная система на 5 отделений А4 цвет уф-печати и рамок красный. Размер стенда 500х750 мм. Карманы на стенде надежно закреплены профессиональным, двухсторонним скотчем. Стенд Уголок потребителя с перекидной системой найдет применение в торговой организации, сфере услуг, заведениях общепита</p>
+						<p><a href="javascript:;">Наклейки служебные по безопасности тут</a></p>
+						<div class="__wo-holder-10"></div>
+						<div class="__card-content __content --collapsed" data-collapsed-text="Смотреть описание">
+							<div class="__row">
+								<div class="__pict --border-circle __wo-pict-bg" style="background-image:url('/public/catalog/item-13-1.jpeg');" data-parallax></div>
+								<div class="__descr">
+									<h3>Стенд универсальный для торговли, общепита, сферы услуг</h3>
+									<ul class="__wo-ul">
+										<li>Пункт 1</li>
+										<li>Пункт 2</li>
+									</ul>
+								</div>
+							</div>
+							<div class="__row">
+								<div class="__pict --border-circle __wo-pict-bg" style="background-image:url('/public/catalog/item-13-3.jpeg');" data-parallax></div>
+								<div class="__descr">
+									<h3>Рамки красные премиум качества</h3>
+									<ul class="__wo-ul">
+										<li>Пункт 3</li>
+										<li>Пункт 4</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="__wo-col-m-3">
+						<strong>Вопросы и ответы</strong>
+						<div class="__wo-holder-10"></div>
+						<div class="__faq">
+							<div class="__grid">
+								<div class="__message">
+									<div class="__head">
+										<div class="__user">
+											<div class="__wo-pict-bg --border-circle __pict" style="background-image:url('https://xsgames.co/randomusers/avatar.php?g=pixel&seed=user-1');" data-square></div>
+											<strong>Андрей Иванович<em>Постоянный покупатель</em></strong>
+										</div>
+										<time>5 ноября 2024</time>
+									</div>
+									<p>Подскажите, этот товар произведен в РФ? Или Китай?</p>
+									<div class="__message --answer">
+										<div class="__head">
+											<div class="__user">
+												<strong><i class="__wo-icon-rr-comment --mr"></i>Стендово!<em>Представитель магазина</em></strong>
+												<div class="__wo-pict-bg --border-circle __pict" style="background-image:url('/public/brands/stendovo-logo.jpg');" data-square></div>
+											</div>
+										</div>
+										<p>Это отечественный продукт, произведен на территории РФ.</p>
+									</div>
+								</div>
+								<div class="__message">
+									<div class="__head">
+										<div class="__user">
+											<div class="__wo-pict-bg --border-circle __pict" style="background-image:url('https://xsgames.co/randomusers/avatar.php?g=pixel&seed=user-2');" data-square></div>
+											<strong>Матвей<em>Покупатель</em></strong>
+										</div>
+										<time>16 октября 2024</time>
+									</div>
+									<p>Какие габариты в упаковке?</p>
+								</div>
+							</div>
+							<div class="--wo-flex-center">
+								<a href="javascript:;" class="__wo-btn --outline --wo-size-s">Смотреть все вопросы и ответы</a>
+							</div>
+							<div class="__wo-holder-10"></div>
+							<div class="__wo-panel --wo-text-center">
+								<button class="__wo-btn --outline">Задать вопрос</button>
+								<div class="__wo-holder-5"></div>
+								<div class="--wo-size-s">
+									<i class="__wo-icon-question-outline --mr"></i>Всего вопросов&nbsp; <span class="__wo-label --info --size-xs">21</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="__wo-col-m-3">
+						<strong>Случайный отзыв</strong>
+						<div class="__wo-holder-10"></div>
+
+						<div class="__feedback">
+							<div class="__grid">
+								<div class="__message">
+									<div class="__head">
+										<div class="__user">
+											<div class="__wo-pict-bg --border-circle __pict" style="background-image:url('https://xsgames.co/randomusers/avatar.php?g=pixel&seed=user-3');" data-square></div>
+											<strong>Постоянный покупатель<em>Покупатель</em></strong>
+										</div>
+										<div class="__rating">
+											<ul>
+												<li><i class="__wo-icon-star"></i></li>
+												<li><i class="__wo-icon-star"></i></li>
+												<li><i class="__wo-icon-star"></i></li>
+												<li><i class="__wo-icon-star"></i></li>
+												<li><i class="__wo-icon-star --empty"></i></li>
+											</ul>
+											<time>22 Сентября 2022</time>
+										</div>
+									</div>
+									<div class="__content --collapsed" data-collapsed-text="Читать полностью">
+										<em>Достоинства</em>
+										<p>Отличное сочетание цена-качество</p>
+										<em>Недостатки</em>
+										<p>—</p>
+										<em>Комментарий</em>
+										<p>Мольберты уже покупала у этого производителя, поэтому настольный мольберт для детей друзей выбирала той же марки. Взяла два - один на 30 см, второй на 50 см. Девочки рисуют, и чтобы не ссорились - у каждой теперь есть свой;</p>
+										<p>Цена хорошая, брала со скидкой. Угол наклона можно регулировать. Сосна без лака, но хорошо отшлифована, гладкая. Выполнен качественно. Крепления для холста сверху нет, но для настольного мольберта для малых форматов холстов этого и не нужно. Для детей и начинающих художников в самый раз.  Пришёл быстро, хорошо упакован в пленку. </p>
+									</div>
+								</div>
+							</div>
+							<div class="__wo-holder-5"></div>
+							<div class="--wo-flex-center">
+								<a href="javascript:;" class="__wo-btn --outline --wo-size-s">Больше отзывов</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			
-			
 
 			<div class="__wo-holder-20"></div>
 			<div class="__cta">
@@ -500,6 +623,258 @@
 					</div>
 				</div>
 				<div class="__bg" data-parallax style="background-image: url('/public/cta/cta-2.jpg');"></div>
+			</div>
+			<div class="__wo-holder-10"></div>
+
+			<div id="catalog-offer">
+				<div class="__title-header">
+					<h2>Вам может быть интересно</h2>
+				</div>
+
+				<div class="__wo-row">
+					<div class="__catalog-card __wo-col-m-2 __wo-col-xs-6">
+						<div class="__wrap">
+							<div class="__gallery">
+								<div class="__pict" style="background-image:url('/public/catalog/item-10-1.jpeg');"></div>
+							</div>
+							<div class="__info">
+								<span class="__price"><strong>261 ₽</strong></span>
+								<h4><a href="javascript:;" title="Табличка 210х300 Режим работы">Табличка 210х300 Режим работы</a></h4>
+								<div class="__rating"><span>Новинка!</span></div>
+							</div>
+							<div class="__action">
+								<button class="__wo-btn --dark --outline --wo-size-s"><span>В корзину</span></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="__catalog-card __wo-col-m-2 __wo-col-xs-6">
+						<div class="__wrap">
+							<div class="__gallery">
+								<div class="__labels">
+									<span class="__wo-label --success">Скидка 25%</span>
+								</div>
+								<div class="__pict" style="background-image:url('/public/catalog/item-08-1.jpeg');"></div>
+							</div>
+							<div class="__info">
+								<span class="__price"><strong>1 132 ₽</strong><s>1 510 ₽</s><span>-25%</span></span>
+								<h4><a href="javascript:;" title="Стенд Уголок потребителя 4 шрифт зеленый">Стенд Уголок потребителя 4 шрифт зеленый</a></h4>
+								<div class="__rating"><span>4.5</span><i class="__wo-icon-star"></i><i class="__wo-icon-star"></i><i class="__wo-icon-star"></i><i class="__wo-icon-star"></i><i class="__wo-icon-star --empty"></i></div>
+							</div>
+							<div class="__action">
+								<button class="__wo-btn --dark --outline --wo-size-s"><span>В корзину</span></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="__catalog-card __wo-col-m-2 __wo-col-xs-6">
+						<div class="__wrap">
+							<div class="__gallery">
+								<div class="__pict" style="background-image:url('/public/catalog/item-07-1.jpeg');"></div>
+							</div>
+							<div class="__info">
+								<span class="__price"><strong>176 ₽</strong></span>
+								<h4><a href="javascript:;" title="Табличка 200х200 Не курить">Табличка 200х200 Не курить</a></h4>
+								<div class="__rating"><span>Новинка!</span></div>
+							</div>
+							<div class="__action">
+								<button class="__wo-btn --dark --outline --wo-size-s"><span>В корзину</span></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="__catalog-card __wo-col-m-2 __wo-col-xs-6">
+						<div class="__wrap">
+							<div class="__gallery">
+								<div class="__labels"></div>
+								<div class="__pict" style="background-image:url('/public/catalog/item-09-1.jpeg');"></div>
+							</div>
+							<div class="__info">
+								<span class="__price"><strong>227 ₽</strong></span>
+								<h4><a href="javascript:;" title="Комплект книг Уголок потребителя">Комплект книг Уголок потребителя</a></h4>
+								<div class="__rating"><span>5.0</span><i class="__wo-icon-star"></i><i class="__wo-icon-star"></i><i class="__wo-icon-star"></i><i class="__wo-icon-star"></i><i class="__wo-icon-star"></i></div>
+							</div>
+							<div class="__action">
+								<button class="__wo-btn --dark --outline --wo-size-s"><span>В корзину</span></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="__catalog-card __wo-col-m-2 __wo-col-xs-6">
+						<div class="__wrap">
+							<div class="__gallery">
+								<div class="__labels">
+									<span class="__wo-label --success">Скидка 35%</span>
+								</div>
+								<div class="__pict" style="background-image:url('/public/catalog/item-11-1.jpeg');"></div>
+							</div>
+							<div class="__info">
+								<span class="__price"><strong>981 ₽</strong><s>1 510 ₽</s><span>-35%</span></span>
+								<h4><a href="javascript:;" title="Стенд Уголок потребителя 4 синий">Стенд Уголок потребителя 4 синий</a></h4>
+								<div class="__rating"><span>4.5</span><i class="__wo-icon-star"></i><i class="__wo-icon-star"></i><i class="__wo-icon-star"></i><i class="__wo-icon-star"></i><i class="__wo-icon-star --empty"></i></div>
+							</div>
+							<div class="__action">
+								<button class="__wo-btn --dark --outline --wo-size-s"><span>В корзину</span></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="__catalog-card __wo-col-m-2 __wo-col-xs-6">
+						<div class="__wrap">
+							<div class="__gallery">
+								<div class="__pict" style="background-image:url('/public/catalog/item-12-1.jpg');"></div>
+							</div>
+							<div class="__info">
+								<span class="__price"><strong>507 ₽</strong></span>
+								<h4><a href="javascript:;" title="Баннер Скоро открытие 1000х750 белый">Баннер Скоро открытие 1000х750 белый</a></h4>
+								<div class="__rating"><span>Новинка!</span></div>
+							</div>
+							<div class="__action">
+								<button class="__wo-btn --dark --outline --wo-size-s"><span>В корзину</span></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="__catalog-card __wo-col-m-2 __wo-col-xs-6">
+						<div class="__wrap">
+							<div class="__gallery">
+								<div class="__labels">
+									<span class="__wo-label --success">Скидка 7%</span>
+								</div>
+								<div class="__pict" style="background-image:url('/public/catalog/item-01-1.jpeg');"></div>
+							</div>
+							<div class="__info">
+								<span class="__price"><strong>1 841 ₽</strong><s>1 980 ₽</s><span>-7%</span></span>
+								<h4><a href="javascript:;" title="Мольберт для мела и маркера двусторонний">Мольберт для мела и маркера двусторонний</a></h4>
+								<div class="__rating"><span>4.7</span><i class="__wo-icon-star"></i><i class="__wo-icon-star"></i><i class="__wo-icon-star"></i><i class="__wo-icon-star"></i><i class="__wo-icon-star --empty"></i></div>
+							</div>
+							<div class="__action">
+								<button class="__wo-btn --dark --outline --wo-size-s"><span>В корзину</span></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="__catalog-card __wo-col-m-2 __wo-col-xs-6">
+						<div class="__wrap">
+							<div class="__gallery">
+								<div class="__labels">
+									<span class="__wo-label --success">Скидка 30%</span>
+									<span class="__wo-label --info">Новинка!</span>
+								</div>
+								<div class="__pict" style="background-image:url('/public/catalog/item-02-1.jpeg');"></div>
+							</div>
+							<div class="__info">
+								<span class="__price"><strong>2 933 ₽</strong><s>4 190 ₽</s><span>-30%</span></span>
+								<h4><a href="javascript:;" title="Штендер меловой 1200 Деревяшкино двусторонний">Штендер меловой 1200 Деревяшкино двусторонний</a></h4>
+								<div class="__rating"><span>Новника!</span></div>
+							</div>
+							<div class="__action">
+								<button class="__wo-btn --dark --outline --wo-size-s"><span>В корзину</span></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="__catalog-card __wo-col-m-2 __wo-col-xs-6">
+						<div class="__wrap">
+							<div class="__gallery">
+								<div data-card-slideshow>
+									<div class="__pict" style="background-image:url('/public/catalog/item-03-1.jpeg');"></div>
+									<div class="__pict" style="background-image:url('/public/catalog/item-03-2.jpeg');"></div>
+									<div class="__pict" style="background-image:url('/public/catalog/item-03-3.jpeg');"></div>
+								</div>
+							</div>
+							<div class="__info">
+								<span class="__price"><strong>227 ₽</strong></span>
+								<h4><a href="javascript:;" title="Тейбл тент А5 белый">Тейбл тент А5 белый</a></h4>
+								<div class="__rating"><span>3.5</span><i class="__wo-icon-star"></i><i class="__wo-icon-star"></i><i class="__wo-icon-star"></i><i class="__wo-icon-star --empty"></i><i class="__wo-icon-star --empty"></i></div>
+							</div>
+							<div class="__action">
+								<button class="__wo-btn --dark --outline --wo-size-s"><span>В корзину</span></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="__catalog-card __wo-col-m-2 __wo-col-xs-6">
+						<div class="__wrap">
+							<div class="__gallery">
+								<div class="__labels">
+									<span class="__wo-label --success">Скидка 70%</span>
+								</div>
+								<div class="__pict" style="background-image:url('/public/catalog/item-04-1.jpeg');"></div>
+							</div>
+							<div class="__info">
+								<span class="__price"><strong>306 ₽</strong><s>1 020 ₽</s><span>-70%</span></span>
+								<h4><a href="javascript:;" title="Доска 60х40 Деревяшкино маркерная">Доска 60х40 Деревяшкино маркерная</a></h4>
+								<div class="__rating"><span>5.0</span><i class="__wo-icon-star"></i><i class="__wo-icon-star"></i><i class="__wo-icon-star"></i><i class="__wo-icon-star"></i><i class="__wo-icon-star"></i></div>
+							</div>
+							<div class="__action">
+								<button class="__wo-btn --dark --outline --wo-size-s"><span>В корзину</span></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="__catalog-card __wo-col-m-2 __wo-col-xs-6">
+						<div class="__wrap">
+							<div class="__gallery">
+								<div class="__pict" style="background-image:url('/public/catalog/item-05-1.jpeg');"></div>
+							</div>
+							<div class="__info">
+								<span class="__price"><strong>329 ₽</strong></span>
+								<h4><a href="javascript:;" title="Тейбл тент А4 синий">Тейбл тент А4 синий</a></h4>
+								<div class="__rating"><span>Новинка!</span></div>
+							</div>
+							<div class="__action">
+								<button class="__wo-btn --dark --outline --wo-size-s"><span>В корзину</span></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="__catalog-card __wo-col-m-2 __wo-col-xs-6">
+						<div class="__wrap">
+							<div class="__gallery">
+								<div class="__pict" style="background-image:url('/public/catalog/item-06-1.jpeg');"></div>
+							</div>
+							<div class="__info">
+								<span class="__price"><strong>176 ₽</strong></span>
+								<h4><a href="javascript:;" title="Табличка 200х200 Место для курения">Табличка 200х200 Место для курения</a></h4>
+								<div class="__rating"><span>Новинка!</span></div>
+							</div>
+							<div class="__action">
+								<button class="__wo-btn --dark --outline --wo-size-s"><span>В корзину</span></button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="__wo-holder-10"></div>
+			
+			<div class="__cta">
+				<div class="__wrap">
+					<div>
+						<strong>Контур лайн</strong>
+						<p>Профессиональные решения<br>для эффективной презентации вашего бренда</p>
+					</div>
+					<div class="__btns">
+						<a href="javascript:;">
+							<i class="__wo-icon-rr-truck-side"></i>
+							<span>Доставка</span>
+						</a>
+						<a href="javascript:;">
+							<i class="__wo-icon-rr-comment"></i>
+							<span>Написать нам</span>
+						</a>
+						<a href="javascript:;">
+							<i class="__wo-icon-rr-label"></i>
+							<span>Акции и скидки</span>
+						</a>
+						<a href="javascript:;">
+							<i class="__wo-icon-rr-badge"></i>
+							<span>Качество</span>
+						</a>
+					</div>
+				</div>
+				<div class="__bg" data-parallax style="background-image: url('/public/cta/cta-1.jpg');"></div>
 			</div>
 			<div class="__wo-holder-10"></div>
 
