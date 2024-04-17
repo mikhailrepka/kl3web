@@ -235,7 +235,7 @@
 				<div class="__info --xs-hidden">
 					<a href="javascript:;"><i class="__wo-icon-rr-truck-side"></i><em>2</em></a>
 					<a href="javascript:;"><i class="__wo-icon-rr-heart"></i><em>35</em></a>
-					<button class="__wo-btn --inverted"><span>16 870 ₽</span><span><i class="__wo-icon-rr-shopping-cart"></i></span></button>
+					<button class="__wo-btn --inverted"><span>16 870 ₽</span><span><i class="__wo-icon-rr-shopping-bag"></i></span></button>
 					<a data-dropdown="dropdown-usermenu" href="javascript:;"><i class="__wo-icon-rr-user"></i></a>
 
 					<div id="dropdown-usermenu" class="__wo-dropdown">
@@ -301,6 +301,9 @@
 			<div class="__wo-holder-5"></div>
 			<div class="__wo-holder-5"></div>
 			<div class="__item-page">
+				<div class="__item-btn-bar" id="item-btn-bar">
+					<button class="__wo-btn --addtocart --inverted"><span><i class="__wo-icon-rr-shopping-bag-add"></i></span><span>Добавить в корзину</span></button>
+				</div>
 				<div class="__wo-row">
 					<div class="__wo-col-m-7 __gallery">
 						<div id="item-gallery">
@@ -358,7 +361,7 @@
 								</div>
 							</div>
 							<div class="__wo-holder-10"></div>
-							<div class="__wo-holder-10"></div>
+							<div class="__wo-holder-10 --xs-hidden"></div>
 	
 							<div class="__buy-area">
 								<div class="__price">
@@ -371,7 +374,9 @@
 									</div>
 								</div>
 								<div class="__wo-holder-10"></div>
-								<button class="__wo-btn --addtocart --inverted"><span><i class="__wo-icon-rr-shopping-bag-add"></i></span><span>Добавить в корзину</span></button>
+								<div class="__cartbutton-flow" id="cartbutton-flow">
+									<button id="big-btn" class="__wo-btn --addtocart --inverted"><span><i class="__wo-icon-rr-shopping-bag-add"></i></span><span>Добавить в корзину</span></button>
+								</div>
 								<div class="__wo-holder-10"></div>
 								<strong>Модификации</strong>
 								<div class="__wo-holder-5"></div>
@@ -439,7 +444,7 @@
 										</tr>
 									</tbody>
 								</table>
-								<div class="--wo-flex-center">
+								<div class="--wo-flex-center --xs-hidden">
 									<button class="__wo-btn --size-s --outline"><span>Перейти к описанию</span></button>
 								</div>
 							</div>
